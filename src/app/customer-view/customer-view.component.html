@@ -1,0 +1,32 @@
+<div class="container mt-5">
+  <h3 class="text-center mb-4">Employee List</h3>
+
+  <table class="table table-bordered table-striped text-center align-middle">
+    <thead class="table-dark">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Role</th>
+        <th>Address</th> <!-- ✅ Added -->
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngIf="!customers || customers.length === 0">
+        <td colspan="6">No customers available.</td>
+      </tr>
+      <tr *ngFor="let customer of customers">
+        <td>{{ customer.id }}</td>
+        <td>{{ customer.name }}</td>
+        <td>{{ customer.age }}</td>
+        <td>{{ customer.designation }}</td>
+        <td>{{ customer.address }}</td> <!-- ✅ Display address -->
+        <td>
+          <button class="btn btn-sm btn-info me-2" (click)="onEdit(customer)">Edit</button>
+          <button class="btn btn-sm btn-danger" (click)="onDelete(customer.id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

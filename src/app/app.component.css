@@ -1,0 +1,11 @@
+.form-container {
+  max-width: 200px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+}
+.form-control {
+  margin-bottom: 10px;
+}

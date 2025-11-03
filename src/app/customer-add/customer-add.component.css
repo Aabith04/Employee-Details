@@ -1,0 +1,82 @@
+/* Container Styling */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Heading */
+h3 {
+  text-align: center;
+  color: #009879;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Input styling */
+input.form-control {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  padding: 10px 12px;
+  font-size: 1rem;
+  color: #000;
+  background-color: #fff;
+  caret-color: black;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input.form-control:focus {
+  outline: none;
+  border-color: #009879;
+  box-shadow: 0 0 5px rgba(0, 152, 121, 0.5);
+}
+
+/* Make sure input cursor shows */
+input:enabled {
+  cursor: text;
+}
+
+/* Disable style */
+input[disabled] {
+  caret-color: transparent;
+  cursor: not-allowed;
+}
+
+/* Button styling */
+.btn-primary {
+  background-color: #009879;
+  border-color: #009879;
+  border-radius: 8px;
+  padding: 8px 24px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #007a63;
+  border-color: #007a63;
+}
+
+/* Center the button */
+.text-center {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Error text */
+.text-danger, .class-danger {
+  font-size: 0.875rem;
+  color: red;
+  margin-top: 4px;
+}
+
+/* Responsive tweak */
+@media (max-width: 576px) {
+  .btn-primary {
+    width: 100%;
+  }
+}

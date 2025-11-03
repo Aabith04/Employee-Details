@@ -1,0 +1,15 @@
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Employee Management System</h2>
+
+  <app-customer-add
+    (customerAdded)="getCustomer($event)"
+    (customerUpdated)="updateCustomer($event)"
+    [editingCustomer]="editingCustomer">
+  </app-customer-add>
+
+  <app-customer-view
+    [customers]="customers"
+    (deleteCustomer)="deleteCustomerFromView($event)"
+    (editCustomer)="editCustomerFromView($event)">
+  </app-customer-view>
+</div>
